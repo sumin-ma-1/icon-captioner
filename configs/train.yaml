@@ -1,0 +1,39 @@
+seed: 42
+
+paths:
+  yolo_weights: "checkpoints/yolo/screenspot_ft_2.pt"
+  train_manifest: "data/processed/icon_caption_jsonl_gt/train.jsonl"
+  val_manifest: "data/processed/icon_caption_jsonl_gt/val.jsonl"
+  out_dir: "checkpoints/captioner"
+  train_image_weights: data/processed/icon_caption_jsonl_gt/train_image_weights.json
+  train_roi_weights: data/processed/icon_caption_jsonl_gt/train_roi_weights.json
+
+data:
+  imgsz: 640
+  max_len: 24
+
+model:
+  feature_layer_idx: 15 # layer from which to extract features (15: P3)
+  stride: 8 # P3 stride
+  roi_out: 7
+  max_len: 24
+  conf: 0.25
+  iou: 0.45
+  topk: 20
+  decoder:
+    d_model: 256
+    nhead: 4
+    num_layers: 4
+    ffn: 1024
+
+train:
+  batch_size: 4
+  lr: 3e-4
+  weight_decay: 1e-2
+  amp: true
+  epochs: 50
+  patience: 10
+  num_workers: 0
+  pin_memory: false
+  freeze_yolo: true
+  log_every: 10
