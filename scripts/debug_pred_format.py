@@ -1,3 +1,6 @@
+# Inspect the raw output format returned by the Ultralytics YOLO model.
+# Useful for verifying tensor/list/tuple structure before downstream decoding.
+
 import os
 import torch
 import cv2

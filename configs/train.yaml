@@ -1,7 +1,7 @@
 seed: 42
 
 paths:
-  yolo_weights: "checkpoints/yolo/screenspot_ft_2.pt"
+  yolo_weights: "checkpoints/yolo/epoch235.pt"
   train_manifest: "data/processed/icon_caption_jsonl_gt/train.jsonl"
   val_manifest: "data/processed/icon_caption_jsonl_gt/val.jsonl"
   out_dir: "checkpoints/captioner"

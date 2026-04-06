@@ -1,3 +1,6 @@
+# Improved image-weight builder with multiple aggregation modes (mean, max, minfreq, topk_mean).
+# Supports smoothing, cap, and more flexible weight computation for balanced sampling.
+
 import os, json, argparse
 from collections import Counter
 import numpy as np

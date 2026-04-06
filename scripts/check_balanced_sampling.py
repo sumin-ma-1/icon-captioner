@@ -1,3 +1,6 @@
+# Loads the train manifest and compares label distribution between random shuffle and weighted sampling.
+# Uses a dataset loader and decoder to count GT labels from batches and print top-k distributions.
+
 import os
 import json
 import yaml

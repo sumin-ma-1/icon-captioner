@@ -1,3 +1,6 @@
+# Debug/visualization tool for raw YOLO predictions.
+# Runs YOLO on one image, applies NMS, draws top detections, and shows crop previews.
+
 import os
 import cv2
 import numpy as np

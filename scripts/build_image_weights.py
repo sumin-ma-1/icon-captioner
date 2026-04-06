@@ -1,3 +1,6 @@
+# Builds per-image sampling weights from a training manifest.
+# Uses inverse label frequency averaged over ROI labels and writes JSON weights.
+
 import os, json, argparse, math
 from collections import Counter
 

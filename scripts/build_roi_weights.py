@@ -1,3 +1,6 @@
+# Builds per-ROI sampling weights from a training manifest.
+# Computes inverse-frequency weights for each ROI label and saves them in JSON.
+
 import os, json, argparse
 from collections import Counter
 

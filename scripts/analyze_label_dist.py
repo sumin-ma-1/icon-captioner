@@ -1,3 +1,6 @@
+# Reads a JSONL manifest and reports label distribution statistics.
+# Prints top labels, word-count distribution, and top words from ROI texts.
+
 import os
 import json
 from collections import Counter, defaultdict
