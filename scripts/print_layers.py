@@ -1,4 +1,6 @@
 # sanity check 1
+# Very small sanity script that prints the layer/module names of the YOLO model.
+
 from ultralytics import YOLO
 
 model = YOLO("checkpoints/yolo/best.pt")

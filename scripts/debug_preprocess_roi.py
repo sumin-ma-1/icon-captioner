@@ -1,4 +1,7 @@
 # sanity check 2: ROI가 맞는지 시각 확인
+# Sanity-checks ROI preprocessing and letterbox coordinate conversion.
+# Loads one sample, visualizes letterboxed GT boxes, and checks ROI token shapes through the model.
+
 """
 manifest 샘플 1개를 읽고
 

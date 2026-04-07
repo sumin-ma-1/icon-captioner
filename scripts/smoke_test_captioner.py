@@ -1,3 +1,6 @@
+# Quick smoke test for the captioner inference pipeline.
+# Loads YOLO weights and runs forward_infer on one image to verify outputs and crops.
+
 import os
 import cv2
 import numpy as np

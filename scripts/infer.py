@@ -1,4 +1,7 @@
 # 추론 + 결과 이미지 저장
+# Simple inference script using hard-coded model and image names.
+# Runs forward_infer, draws boxes/text on image, and saves outputs/infer_vis.jpg.
+
 import os
 import cv2
 

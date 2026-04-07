@@ -1,4 +1,7 @@
 # sanity check 3: 학습 됨을 확인
+# Training sanity check that overfits a single batch.
+# Verifies that loss decreases and predicted text matches GT on one batch.
+
 """
 한 배치만 계속 학습해서 loss가 내려가면
 

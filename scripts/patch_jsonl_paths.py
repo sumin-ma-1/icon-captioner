@@ -1,3 +1,6 @@
+# Fixes hard-coded image_path prefixes in JSONL manifests.
+# Rewrites train.jsonl and val.jsonl under icon_caption_jsonl_gt.
+
 import os, json
 
 SRC_DIR = "data/processed/icon_caption_jsonl_gt"

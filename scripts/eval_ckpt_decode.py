@@ -1,3 +1,6 @@
+# Loads captioner checkpoints and runs a small decode/evaluation pass.
+# Prints GT vs predicted text for the first batch from validation/train manifest.
+
 import os, glob
 import yaml
 import torch

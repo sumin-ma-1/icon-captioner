@@ -1,4 +1,6 @@
-# scripts/infer_best_vis.py
+# More complete inference/visualization utility.
+# Loads a best checkpoint, benchmarks latency, runs inference over images, and saves annotated outputs.
+
 import os
 import time
 import glob

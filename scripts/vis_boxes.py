@@ -1,3 +1,6 @@
+# Visualizes predicted boxes and texts on a single image.
+# Uses forward_infer and writes the annotated image to disk.
+
 import os
 import cv2
 import numpy as np
